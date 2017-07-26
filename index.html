@@ -1,0 +1,38 @@
+<html ng-app="myApp">
+<head>
+	<!-- adding style sheets -->
+	<link rel="stylesheet" type_"text/css href="style/menu.css">
+		
+	<title>meTy</title>
+</head>
+<body>
+<!-- angular  -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<!-- <script src="https://npmcdn.com/angular-toastr/dist/angular-toastr.tpls.js"></script> -->
+
+<!-- controllers -->
+<!-- app.js must be FIRST, since the component is added to it -->
+<script src="app.js"></script>
+
+<script src="home/home.controller.js"></script>
+<script src="projects/projects.controller.js"></script>
+
+
+
+<div class="menu">
+	
+  	  <span class="homenav" ui-sref="home">Home</span>
+  	  <span class="projnav" ui-sref="projects">projects</span>
+  	
+</div>
+
+
+
+<!-- <projects></projects> -->
+<ui-view></ui-view>
+
+
+
+</body>
+</html>
