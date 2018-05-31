@@ -1,0 +1,26 @@
+.menu{
+	border-radius: dotted;
+	height: 38px;
+/*	width: inherit;*/
+	background-color:#722333;
+}
+body{
+	width: 100%;
+	background-color:#132342;
+	margin: 0px;
+}
+.mehead{
+    background-color: grey;
+    width: 97.%;
+    height: 232px;
+    margin: 31px;
+    padding-top: 200px;
+    position: relative;
+	}
+.words{
+	background-color: purple;
+    border-style: dotted;    width: fit-content;
+    margin: auto;
+    margin-left: 37%;
+    /* padding-left: 1px; */    /* height: 199px; */
+}
