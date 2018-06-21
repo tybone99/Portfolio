@@ -1,7 +1,7 @@
 {
-  "name": "portfoilo-ty",
+  "name": "portfolio-ty",
   "version": "1.0.0",
-  "description": "my portfoilo",
+  "description": "my portfolio",
   "engines": {
     "node": "6.11.1"
   },
