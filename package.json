@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "my portfolio",
   "engines": {
-    "node": "6.11.1"
+    "node": "6.10.3",
+    "npm": "3.10.10"
   },
   "main": "index.js",
   "scripts": {
