@@ -1,17 +1,20 @@
 var express = require('express');
-var app = express();
+var bodyParser = require('body-parser');
+var path = require("path");
 
-app.set('port', (process.env.PORT || 5000));
+app = express();
 
-app.use(express.static(__dirname + '/public'));
+// body parser Middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
-app.get('/', function(request, response) {
-  response.render('pages/index');
+// set static path
+app.use(express.static(path.join(__dirname, 'views')));
+
+app.get('/', function(req, res){
+	res.send('hello world');
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
+app.listen(3030, function(){
+	console.log('running on server 3030...');
 });
