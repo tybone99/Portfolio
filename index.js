@@ -13,8 +13,9 @@ app.use(express.static(path.join(__dirname, 'views')));
 
 app.get('/', function(req, res){
 	res.send('hello world');
-});
-
-app.listen(3030, function(){
-	console.log('running on server 3030...');
-});
+})
+.listen(process.env.PORT || 5000);
+console.log("runing");
+// app.listen(3030, function(){
+// 	console.log('running on server 3030...');
+// });
